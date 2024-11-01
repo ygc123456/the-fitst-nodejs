@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>编辑留言</title>
+</head>
+<body>
+    <h1>编辑留言</h1>
+    <form action="/update/<%= message.id %>" method="POST">
+        <input type="text" name="name" value="<%= message.name %>" required><br>
+        <textarea name="message" rows="5" required><%= message.message %></textarea><br>
+        <button type="submit">更新留言</button>
+    </form>
+</body>
+</html>
